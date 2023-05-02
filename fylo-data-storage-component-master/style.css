@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Big+Shoulders+Display:wght@700&family=Karla:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Open+Sans&family=Poppins:wght@200;400;600&family=Raleway:wght@400;700&display=swap');
+
+
+*, *::before, *::after{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	background-color: hsl(229, 57%, 11%);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url(./images/bg-desktop.png);
+	background-repeat: no-repeat;
+	background-position: 0 22rem;
+	background-size: 100%;
+}
+
+.container{
+	color: white;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap:2rem;
+	padding: 2rem;
+	max-width: 64rem;
+}
+
+.fylo{
+	background-color: hsl(228, 56%, 26%);
+	display: flex;
+	flex-direction: column;
+	gap:1.75rem;
+	padding:2.5rem 8rem 2.5rem 2.5rem;
+	justify-content: start;
+	border-radius: 10px 110px 10px 10px;
+}
+
+.icons{
+	display: flex;
+	flex-direction: row;
+	gap:1rem;
+}
+
+.icons > div{
+	background-color: hsl(229, 57%, 11%);
+	display: grid;
+	place-items: center;
+	padding: 0.75rem;
+	border-radius: 20%;
+}
+
+.progress-grid-column{
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-column: span 2;
+	position: relative;
+}
+
+.progress-grid-column .space-tracker{
+	align-self: end;
+}
+
+.floating-text-box{
+	grid-column: 3 / 3;
+}
+
+.space-tracker{
+	grid-column: 1 / 4;
+}
+
+.floating-text-box{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap:0.75rem;
+	max-width: 12rem;
+	padding: 0.75rem 1.25rem;
+	border-radius: 10px 10px 0 10px;
+	color: hsl(229, 57%, 11%);
+	background-color: white;
+	position: absolute;
+	transform: translateY(0.75rem);
+	transform: translatex(-2rem);
+}
+
+.floating-text-box::after{
+	content: '';
+	background-color: white;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	bottom: -1.75rem;
+	width: 6rem;
+	border-radius: 0 10px 0 0;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+	z-index: 0;
+}
+
+.floating-text-box span{
+	font-size: 2rem;
+	font-weight: 700;
+	color:hsl(229, 57%, 11%);
+} 
+
+.floating-text-box p{
+	font-size: 0.75rem;
+	font-weight: 700;
+	color:hsl(242, 22%, 75%);
+	z-index: 999;
+}
+
+.space-tracker{
+	color: rgba(255, 255, 255, 0.774);
+	background-color: hsl(228, 56%, 26%);
+	padding:3rem;
+	display: flex;
+	flex-direction: column;
+	gap:1.25rem;
+	border-radius: 10px;
+	max-width: 35rem;
+	max-height: 10rem;
+}
+
+.space-tracker p{
+	font-size: 0.75rem;
+}
+
+.space-tracker span{
+	font-weight: 700;
+}
+
+.space-units{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.space-units p{
+	font-weight: 700;
+}
+
+.progress{
+	display: flex;
+	flex-direction: column;
+	gap:0.55rem;
+}
+
+.track{
+	padding:0.25rem;
+	border-radius: 20px;
+	background-color: hsla(229, 57%, 11%, 0.637);
+}
+.progress-bar{
+	padding: 0.3rem;
+	border-radius: 20px;
+	width:70%;
+	background-image: linear-gradient(to right, #ffa399, #FF4D97);
+	position: relative;
+}
+
+.progress-bar::after{
+	content: '';
+	position: absolute;
+	top:1px;
+	bottom: 0;
+	right: 2px;
+	width:0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: white;
+}
+
+@media screen and (max-width: 880px) {
+	.container{
+		display:grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(2, 1fr);
+		justify-content: center;
+	}
+	.fylo{
+		max-height: 12rem;
+	}
+	.progress-grid-column{
+		grid-template-rows: 1fr 1fr;
+	}
+	.floating-text-box{
+		border-radius: 10px;
+	}
+	.floating-text-box::after{
+		display: none;
+	}
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+
+  <main>
+    <div class="container">
+      <div class="rating-container flex-column ">
+          <div class="star">
+            <img src="./images/icon-star.svg" alt="star icon">
+          </div>
+          <div class="text flex-column">
+            <h1>How did we do?</h1>
+           <p>
+              Please let us know how we did with your support request. 
+              All feedback is appreciated to help us improve our offering!
+            </p>
+          </div>
+          <div class="rating-input">
+            <span itemid="1" class="number 1">1</span>
+            <span itemid="2" class="number 2">2</span>
+            <span itemid="3" class="number 3">3</span>
+            <span itemid="4" class="number 4">4</span>
+            <span itemid="5" class="number 5">5</span>
+          </div>
+          <button class="submit">
+            <p>Submit</p>
+          </button>
+      </div>
+     <div class="thank-you-container flex-column display-none">
+      <div class="phone-illustration">
+        <img src="./images/illustration-thank-you.svg" alt="phone illustration">
+      </div>
+        <div class="output">
+          <p class="rating">You selected * out of 5</p>
+        </div>
+        <div class="thank-you-text">
+          <h2>Thank you!</h2>
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need more support, 
+            don’t hesitate to get in touch!
+          </p>
+        </div>
+          
+      </div>
+    </div>
+  </main>
+
+  
+
+
+  
+<script src="./app.js"></script>
+</body>
+</html>

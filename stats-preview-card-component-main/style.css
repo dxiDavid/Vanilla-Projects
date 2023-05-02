@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Outfit:wght@300;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Outfit:wght@300;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+	--overlay: hsla(281, 68%, 33%, 0.575);
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Fraunces', serif;
+	font-family: 'Inter', sans-serif;
+	font-family: 'Kumbh Sans', sans-serif;
+	font-family: 'Lexend Deca', sans-serif;
+	font-family: 'Outfit', sans-serif;
+	font-family: 'Red Hat Display', sans-serif;
+	background-color: hsl(233, 47%, 7%);
+	min-height: 100vh;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap:1rem;
+}
+
+.wrapper{
+	display: flex;
+	flex-direction: row;
+	color:rgba(255, 255, 255, 0.952);
+	background-color:  hsl(244, 38%, 16%);
+	max-width: 76rem;
+	min-height: 28rem;
+	border-radius: 0.5rem;
+}
+
+.text{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 3rem;
+	gap:2.2rem;
+	max-width:35em;
+}
+
+.details{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap:0rem;
+	max-width: 34rem;
+	padding: 1rem;
+}
+
+.title{
+	font-family: 'Inter', sans-serif;
+	font-size: 1.6rem;
+	padding: 0.9rem;
+}
+
+span{
+	color:hsl(277, 64%, 61%);
+}
+
+.description{
+	max-width: 26rem;
+	display: flex;
+	align-self: flex-start;
+	line-height: 1.7rem;
+	text-align: left;
+	font-family: 'Kumbh Sans', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	padding: 0.9rem;
+	color:hsla(0, 0%, 100%, 0.555)
+}
+
+.stats{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	min-width:27rem;
+	align-self: flex-start;
+	/*gap: 5rem;*/
+}
+
+.stats h3{
+	font-size:1.7rem;
+}
+
+.stats h4{
+	font-family: 'Inter', sans-serif;
+	font-weight: 300;
+	font-size: 0.8rem;
+	text-transform:uppercase;
+	color:hsla(0, 0%, 100%, 0.555)
+}
+
+.companies, .templates, .queries{
+	display: flex;
+	flex-direction: column;
+	gap:0.4rem;
+	letter-spacing: 1.5px;
+}
+
+.image{
+	background-color: hsl(281, 72%, 29%);
+	max-width:35em;
+	border-radius:0 0.5rem 0.5rem 0;
+}
+
+.picture{
+	max-width: 100%;
+	min-height: 100%;
+	border-radius:0 0.5rem 0.5rem 0;
+	filter:brightness(40%);
+	filter:opacity(40%);
+	
+}
+
+.overlay{
+	background-color: hsla(281, 68%, 33%, 0.575);
+	min-width:35em;
+	min-height: 100%;
+	border-radius:0 0.5rem 0.5rem 0;
+}
+
+.attribution { 
+	font-size: 0.9rem; 
+	text-align: center; 
+	color:white;
+	margin: 0;
+	padding: 0;
+}
+.attribution a { 
+	color:hsl(277, 64%, 61%);
+}
+
+@media screen and (max-width: 1100px) {
+	
+	.wrapper{
+		display: flex;
+		flex-direction: column-reverse;
+		align-self: center;
+		max-width: 25rem;
+	}
+	.text{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		max-width:100%;
+		gap:0;
+		padding: 1.5rem;
+	}
+	.details{
+		padding:0;
+	}
+	.description{
+		display: flex;
+		align-items: center;
+		align-self: center;
+		text-align: center;
+		max-width:19rem;
+	}
+	.title{
+		font-size: 1.4rem;
+	}
+	.stats{
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+		gap:2rem;
+		padding: 2rem;
+	}
+	.image{
+		border-radius:0.5rem 0.5rem 0 0;
+		
+	}
+	.picture{
+		border-radius:0.5rem 0.5rem 0 0;
+	}
+
+}
