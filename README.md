@@ -1,5 +1,3 @@
-# This contains projects, components and challenges in their vanilla languages
-
 ![](./Vanilla.png)
 
 ## Hello and welcome to my GitHub repository of projects built with vanilla JS. 
