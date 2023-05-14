@@ -1,4 +1,4 @@
-![](./Vanilla.png)
+![Vanilla Projects banner](./Vanilla.png)
 
 ## Hello and welcome to my GitHub repository of projects built with vanilla JS. 
 
